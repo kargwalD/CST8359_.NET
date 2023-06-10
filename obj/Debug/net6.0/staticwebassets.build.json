@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "nmduK5ZjbCbOXxMcHawS63HTdxLzT4Z+EXMcy003VXw=",
+  "Source": "Lab3",
+  "BasePath": "_content/Lab3",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab3\\wwwroot",
+      "Source": "Lab3",
+      "ContentRoot": "C:\\AlgonquinProgramming\\8. Level 5\\CST8359 .NET\\1. Labs\\3. Lab 3\\Lab3\\wwwroot\\",
+      "BasePath": "_content/Lab3",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\AlgonquinProgramming\\8. Level 5\\CST8359 .NET\\1. Labs\\3. Lab 3\\Lab3\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "Lab3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\AlgonquinProgramming\\8. Level 5\\CST8359 .NET\\1. Labs\\3. Lab 3\\Lab3\\wwwroot\\",
+      "BasePath": "_content/Lab3",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    }
+  ]
+}

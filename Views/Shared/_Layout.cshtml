@@ -1,0 +1,32 @@
+﻿﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        Welcome Header!  @ViewBag.title
+            <b>First Name:</b>  Dhruv
+        <br>
+            <b>Last Name:</b>   Kargwal
+        <br>
+            <b>Student Email Address:</b>   karg0025@algonquinlive.com
+        <br>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", "Home") <br />
+        @Html.ActionLink("Show the Song!", "SongForm", "Home") <br />
+        @Html.ActionLink("Students", "CreateStudent", "Home") <br />
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+        Footer!
+    </footer>
+</body>
+</html>
