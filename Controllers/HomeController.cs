@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Lab3.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Lab3.Controllers
 {
@@ -22,11 +23,13 @@ namespace Lab3.Controllers
 
         public IActionResult CreateStudent() => View();
 
-       /* [HttpPost]
+        [HttpPost]
         public IActionResult DisplayStudent(Student student)
         {
             // you will complete this
-        }*/
+            return View(student);
+        }
+
         public IActionResult Error()
         {
             return View();
