@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        Welcome Header!  @ViewBag.title
+        Welcome to Lab 3!<br />
             <b>First Name:</b>  Dhruv
         <br>
             <b>Last Name:</b>   Kargwal
@@ -18,9 +18,9 @@
         <br>
         <br />
         <br />
-        @Html.ActionLink("Home", "Index", "Home") <br />
-        @Html.ActionLink("Show the Song!", "SongForm", "Home") <br />
-        @Html.ActionLink("Students", "CreateStudent", "Home") <br />
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the Song!", "SongForm", "Home")
+        @Html.ActionLink("Students", "CreateStudent", "Home")
     </header>
     <div class="content">
         @RenderBody()
