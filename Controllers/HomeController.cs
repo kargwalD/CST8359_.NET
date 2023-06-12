@@ -15,7 +15,6 @@ namespace Lab3.Controllers
         [HttpPost]
         public IActionResult Sing()
         {
-            //ViewBag.noOfMonkeys = Request.Form["noOfMonkeys"];
             HttpContext.Session.SetString("noOfMonkeys", Request.Form["noOfMonkeys"]);
 
             return View();
@@ -26,7 +25,6 @@ namespace Lab3.Controllers
         [HttpPost]
         public IActionResult DisplayStudent(Student student)
         {
-            // you will complete this
             return View(student);
         }
 
