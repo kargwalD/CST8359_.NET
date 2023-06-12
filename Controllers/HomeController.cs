@@ -20,11 +20,18 @@ namespace Lab3.Controllers
             return View();
         }
 
-        public IActionResult CreateStudent() => View();
+        public IActionResult CreateStudent()
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult DisplayStudent(Student student)
         {
+            if(string.IsNullOrEmpty(student.FirstName) ||  string.IsNullOrEmpty(student.LastName) || string.IsNullOrEmpty(student.EmailAddress) || string.IsNullOrEmpty(student.Desc) || string.IsNullOrEmpty(student.Password) || student.StudentId<=0)
+            {
+                return RedirectToAction("Error", "Home");
+            }
             return View(student);
         }
 

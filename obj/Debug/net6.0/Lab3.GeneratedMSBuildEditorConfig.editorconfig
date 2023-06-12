@@ -16,16 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\AlgonquinProgramming\8. Level 5\CST8359 .NET\1. Labs\3. Lab 3\Lab3
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/AlgonquinProgramming/8. Level 5/CST8359 .NET/1. Labs/3. Lab 3/Lab3/Views/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/AlgonquinProgramming/8. Level 5/CST8359 .NET/1. Labs/3. Lab 3/Lab3/Views/Home/CreateStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/AlgonquinProgramming/8. Level 5/CST8359 .NET/1. Labs/3. Lab 3/Lab3/Views/Home/DisplayStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwbGF5U3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/AlgonquinProgramming/8. Level 5/CST8359 .NET/1. Labs/3. Lab 3/Lab3/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/AlgonquinProgramming/8. Level 5/CST8359 .NET/1. Labs/3. Lab 3/Lab3/Views/Home/Index.cshtml]
