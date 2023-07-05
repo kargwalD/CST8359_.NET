@@ -1,0 +1,67 @@
+﻿﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h2>Hi Professor, Welcome to lab 3 demo!</h2><br />
+            <b>First Name:</b>  Dhruv
+        <br>
+            <b>Last Name:</b>   Kargwal
+        <br>
+            <b>Student Email Address:</b>   karg0025@algonquinlive.com
+        <br>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the Song!", "SongForm", "Home")
+        @Html.ActionLink("Students", "CreateStudent", "Home")
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+        <ol>
+            <li><h4>Explain steps you took to add CSS file and _Layout</h4>
+                CSS stylesheet was created under root/css and is included in the _Layout for general consistency across the web app.<br />
+                _Layout contains all the elements of the general view and is incorporated in each view of the web app by having the layout of the _ViewStart.cshtml defined as _Layout itself.<br />
+                _ViewStart.cshtml contains the code which needs to run before each view or page, hence each running page of the web app will include the layout from the _Layout because of it.<br />
+                <br />
+            </li>
+
+            <li><h4>Short description of what layout does</h4>
+                <ul>
+                    <li>
+                        A common <b>layout</b> provides user with a consistent experience as they navigate from page to page
+                    </li>
+                    <li>
+                        A Layout file allows us to reuse portions of View content(common elements) instead of implementing these visual elements on every page
+                    </li>
+                    <li>
+                        For Eg. no need to code website header or footer more than once or to have same JavaScript statements in every view file
+                    </li>
+                </ul>
+                <br />
+            </li>
+
+            <li>
+                <h4>Why do you put the files in those directories. E.g., CSS in directory x, and why. Layout in directory Y and why. Etc. </h4>
+                The reason for putting the files in different directories is to achieve bvetter organization and easy maintanance of the project because of the following reasons:
+                <ul>
+                    <li>
+                        Having these files in separate files means making changes to one won't mess with the contents of the other, and so modifying, and troubleshooting in case of an error becomes easier.
+                    </li>
+                    <li>
+                        Having a separate CSS file means you can reuse the style across multiple views and maintain consistency of the web app and the same goes for the layout files
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </footer>
+</body>
+</html>

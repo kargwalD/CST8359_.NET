@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Singing...";
+}
+<form asp-controller="Home" asp-action="SongForm" method="post">
+    <input type="submit" value="Play again!" />
+</form>
+@{
+    var number = Convert.ToInt32(Context.Session.GetString("noOfMonkeys"));
+
+    for(; number>=0; number--)
+    {
+        if (number % 2 == 0)
+        {
+            if (number != 0)
+            {
+                <p>
+                    @number little monkeys jumping on the bed<br />
+                    One fell off and bumped her head<br />
+                    Mama called the doctor and the doctor said<br />
+                    @Html.Raw("&quot;")No more monkeys jumping on the bed!@Html.Raw("&quot;")<br />
+                </p>
+                <br />
+            }
+            else
+            {
+                <p>
+                    No little monkeys jumping on the bed<br />
+                    None fell off and bumped her head<br />
+                    Mama called the doctor and the doctor said<br />
+                    @Html.Raw("&quot;")Put those monkeys back in bed!@Html.Raw("&quot;")<br />
+                </p>
+                <br />
+            }
+        }
+        else
+        {
+            if (number != 1)
+            {
+                <p>
+                    @number little monkeys jumping on the bed<br />
+                    One fell off and bumped his head<br />
+                    Mama called the doctor and the doctor said<br />
+                    @Html.Raw("&quot;")No more monkeys jumping on the bed!@Html.Raw("&quot;")<br />
+                </p>
+                <br />
+            }
+            else
+            {
+                <p>
+                    @number little monkey jumping on the bed<br />
+                    He fell off and bumped his head<br />
+                    Mama called the doctor and the doctor said<br />
+                    @Html.Raw("&quot;")No more monkeys jumping on the bed!@Html.Raw("&quot;")<br />
+                </p>
+                <br />
+            }
+        }
+    }
+}
