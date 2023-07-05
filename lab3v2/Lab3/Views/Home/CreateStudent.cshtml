@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Create Student";
+}
+
+<form asp-controller="Home" asp-action="DisplayStudent" method="post">
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="FirstName"  /></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="LastName"  /></td>
+        </tr>
+        <tr>
+            <td>Student ID</td>
+            <td><input type="number" name="StudentId" min="1"  /></td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td><input type="email" name="EmailAddress"  /></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password"  /></td>
+        </tr>
+        <tr>
+            <td>Description of Student</td>
+            <td><input type="text" name="Desc"  /></td>
+        </tr>
+    </table>
+    <input type="submit" value="Create" />
+</form>

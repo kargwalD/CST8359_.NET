@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Jumping Monkeys";
+}
+
+<form asp-controller="Home" asp-action="Sing" method="post">
+    <table>
+        <tr>
+            <td>Enter the number of monkeys between 50 and 100: </td>
+            <td><input type="number" name="noOfMonkeys" min="50" max="100"/></td>
+            <td><input type="submit" value="Sing!" /></td>
+        </tr>
+    </table>
+</form>
