@@ -1,4 +1,9 @@
 # Ignore bin and obj directories
 **/bin/ 
 **/obj/
+**/.vs/
+
+# Securing credentials
+./Lab4/appsettings.Development.json
+./Lab4/appsettings.json
 
