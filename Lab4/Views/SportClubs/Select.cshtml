@@ -1,0 +1,67 @@
+﻿@model Lab4.Models.ViewModels.NewsViewModel
+
+
+@{
+    ViewData["Title"] = "Select";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SportClubs.FirstOrDefault().Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SportClubs.FirstOrDefault().Fee)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.SportClubs)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fee)
+                </td>
+                <td>
+                    <a asp-action="Select" asp-route-id="@item.Id">Select</a> |
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Subscribers to the Sport Club</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <b>Name</b>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.SportClubs) {
+        @foreach (var subscription in Model.Subscriptions.Where(s => s.SportClubId == item.Id))
+        {
+            var fan = Model.Fans.FirstOrDefault(f => f.Id == subscription.FanId);
+            if (fan != null)
+            {
+            <tr>@fan.FullName</tr>
+            }
+        }
+    }
+    </tbody>
+</table>
+    
